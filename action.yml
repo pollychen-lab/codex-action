@@ -179,8 +179,7 @@ runs:
         {
           echo "### Codex CLI"
           echo
-          echo "- Resolved version: \
-\`$resolved_codex_version\`"
+          printf -- '- Resolved version: `%s`\n' "$resolved_codex_version"
         } >> "$GITHUB_STEP_SUMMARY"
 
     - name: Install Codex Responses API proxy
